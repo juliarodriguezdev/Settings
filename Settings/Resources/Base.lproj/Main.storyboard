@@ -26,33 +26,35 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="107" translatesAutoresizingMaskIntoConstraints="NO" id="Dll-RI-ejI">
-                                            <rect key="frame" x="121" y="40" width="230" height="31"/>
+                                            <rect key="frame" x="110.5" y="40" width="240.5" height="31"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHo-8F-e5f">
-                                                    <rect key="frame" x="0.0" y="0.0" width="74" height="31"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="84.5" height="31"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mTu-PV-5HT">
-                                                    <rect key="frame" x="181" y="0.0" width="51" height="31"/>
+                                                    <rect key="frame" x="191.5" y="0.0" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="settingCellToggled:" destination="Ebm-0J-AGz" eventType="valueChanged" id="5nh-t7-B5e"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </stackView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tin-J9-dnK">
-                                            <rect key="frame" x="24" y="19" width="89" height="89"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tin-J9-dnK">
+                                            <rect key="frame" x="8" y="8" width="94.5" height="94.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="Tin-J9-dnK" secondAttribute="height" multiplier="1:1" id="usj-k5-Igh"/>
+                                                <constraint firstAttribute="width" secondItem="Tin-J9-dnK" secondAttribute="height" multiplier="1:1" id="cSf-dT-dcf"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="Tin-J9-dnK" firstAttribute="bottom" secondItem="Yfn-Vr-scq" secondAttribute="bottomMargin" constant="8" id="8rY-7Q-Lpy"/>
-                                        <constraint firstItem="Tin-J9-dnK" firstAttribute="leading" secondItem="Yfn-Vr-scq" secondAttribute="leadingMargin" constant="8" id="JQ3-wW-ozq"/>
-                                        <constraint firstItem="Dll-RI-ejI" firstAttribute="leading" secondItem="Tin-J9-dnK" secondAttribute="trailing" constant="8" id="LjP-Ck-VyG"/>
+                                        <constraint firstItem="Dll-RI-ejI" firstAttribute="leading" secondItem="Tin-J9-dnK" secondAttribute="trailing" constant="8" id="5LM-0q-9pE"/>
+                                        <constraint firstItem="Tin-J9-dnK" firstAttribute="top" secondItem="Yfn-Vr-scq" secondAttribute="top" constant="8" id="8xX-Bb-Pmd"/>
                                         <constraint firstItem="Dll-RI-ejI" firstAttribute="centerY" secondItem="Yfn-Vr-scq" secondAttribute="centerY" id="Q1u-Op-kxR"/>
-                                        <constraint firstItem="Tin-J9-dnK" firstAttribute="top" secondItem="Yfn-Vr-scq" secondAttribute="topMargin" constant="8" id="jgq-tf-cRH"/>
+                                        <constraint firstAttribute="bottom" secondItem="Tin-J9-dnK" secondAttribute="bottom" constant="8" id="Rrc-TL-P73"/>
+                                        <constraint firstItem="Tin-J9-dnK" firstAttribute="leading" secondItem="Yfn-Vr-scq" secondAttribute="leading" constant="8" id="XWj-WD-2ll"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Dll-RI-ejI" secondAttribute="trailing" constant="8" id="pMi-R9-RZh"/>
                                     </constraints>
                                 </tableViewCellContentView>
