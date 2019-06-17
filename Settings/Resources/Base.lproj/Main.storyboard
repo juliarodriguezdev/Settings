@@ -13,12 +13,12 @@
         <scene sceneID="6Ba-kf-IsO">
             <objects>
                 <tableViewController id="dJo-Ae-Ojj" customClass="SettingListTableViewController" customModule="Settings" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SvK-iw-Uur">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SvK-iw-Uur">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="111" id="Ebm-0J-AGz">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingCell" rowHeight="111" id="Ebm-0J-AGz" customClass="SettingTableViewCell" customModule="Settings" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="111"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ebm-0J-AGz" id="Yfn-Vr-scq">
@@ -46,7 +46,7 @@
                                             </constraints>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="Tin-J9-dnK" firstAttribute="bottom" secondItem="Yfn-Vr-scq" secondAttribute="bottomMargin" constant="8" id="8rY-7Q-Lpy"/>
                                         <constraint firstItem="Tin-J9-dnK" firstAttribute="leading" secondItem="Yfn-Vr-scq" secondAttribute="leadingMargin" constant="8" id="JQ3-wW-ozq"/>
@@ -56,6 +56,11 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="Dll-RI-ejI" secondAttribute="trailing" constant="8" id="pMi-R9-RZh"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="settingIconImageView" destination="Tin-J9-dnK" id="04S-Ne-li4"/>
+                                    <outlet property="settingNameLabel" destination="KHo-8F-e5f" id="TRl-84-oSN"/>
+                                    <outlet property="settingSwitch" destination="mTu-PV-5HT" id="8JB-ke-J99"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
